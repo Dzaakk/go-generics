@@ -1,4 +1,4 @@
-module github.com/Dzaakk/go-generics
+module Dzaakk/go-generics
 
 go 1.20
 
