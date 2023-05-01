@@ -19,17 +19,3 @@ func TestFindMin(t *testing.T) {
 	assert.Equal(t, int64(100), FindMin[int64](int64(200), int64(100)))
 	assert.Equal(t, 100.0, FindMin(100.0, 300.0))
 }
-
-func GetFirst[T []E, E any](slice T) E {
-	first := slice[0]
-	return first
-}
-
-func TestGetFirst(t *testing.T) {
-	names := []string{
-		"user1", "user2", "user3",
-	}
-
-	first := GetFirst[[]string, string](names)
-	assert.Equal(t, "user1", first)
-}
